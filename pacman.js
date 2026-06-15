@@ -1,0 +1,16 @@
+let board;
+const  rowCount = 21;
+const columCount = 19;
+const tileSize = 32;
+const boardWidth = columCount*tileSize;
+const boardHeight = rowCount*tileSize;
+let context;
+
+window.onload = fucntion() 
+{
+    board = document.getElementById("board");
+    board.height = boardHeight;
+    board.width = boardWidth;
+    context = board.getContext("2d");
+}
+
